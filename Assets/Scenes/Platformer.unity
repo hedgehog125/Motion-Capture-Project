@@ -1149,11 +1149,11 @@ GameObject:
   - component: {fileID: 3469287837389929581}
   - component: {fileID: 1711813855742871719}
   m_Layer: 0
-  m_Name: Bridge
+  m_Name: LowerBrokenBridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &973656861793025170
 Transform:
@@ -1794,11 +1794,11 @@ GameObject:
   - component: {fileID: 8877294080497361351}
   - component: {fileID: 6689688946477749517}
   m_Layer: 0
-  m_Name: Unbroken
+  m_Name: UpperUnbrokenBridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5189508612731867242
 Transform:
