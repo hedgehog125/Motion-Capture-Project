@@ -656,6 +656,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 409224045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &409257293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409257294}
+  - component: {fileID: 409257295}
+  m_Layer: 0
+  m_Name: Music Notes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409257294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409257293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 804848714}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409257295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409257293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0694fba70b2bdeb42850f1cf0166c557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_notes:
+  - {fileID: 11400000, guid: 57d22bb79729f614096c612c52f61221, type: 2}
+  - {fileID: 11400000, guid: ee5fa6403cbea104a912cd04e20780de, type: 2}
+  m_notePrefab: {fileID: 457138341674761790, guid: 97790bef8258a224c86f2d542d88f46e,
+    type: 3}
 --- !u!1001 &663573226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,6 +829,7 @@ Transform:
   - {fileID: 409224046}
   - {fileID: 2004098615}
   - {fileID: 69344382}
+  - {fileID: 409257294}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -870,7 +920,7 @@ GameObject:
   - component: {fileID: 936574132}
   - component: {fileID: 936574131}
   m_Layer: 0
-  m_Name: Music Notes
+  m_Name: Music Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
