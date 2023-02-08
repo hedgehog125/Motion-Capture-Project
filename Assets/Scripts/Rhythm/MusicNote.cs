@@ -6,8 +6,14 @@ public class MusicNote : MonoBehaviour {
 	[SerializeField] private float m_speed;
 	[SerializeField] private float m_laneWidth;
 	[SerializeField] private int m_laneCount;
+	[SerializeField] private List<Material> m_materials;
 
 	[HideInInspector] public Note NoteData;
+
+	private Renderer ren;
+	private void Awake() {
+		ren = GetComponent<Renderer>();
+	}
 
 	private void Start() {
 		float arriveDelaySeconds = NoteData.beatTime / 50f;
@@ -18,6 +24,8 @@ public class MusicNote : MonoBehaviour {
 			0,
 			-(arriveDelaySeconds * m_speed)
 		);
+
+		ren.material = m_materials[(int)NoteData.color];
 	}
 
 	private void FixedUpdate() {
