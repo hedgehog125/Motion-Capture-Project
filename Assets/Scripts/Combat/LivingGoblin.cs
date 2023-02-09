@@ -10,8 +10,10 @@ public class LivingGoblin : MonoBehaviour {
 	private bool dead;
 
 	private Animator anim;
+	private AudioSource deathSound;
 	private void Awake() {
 		anim = GetComponent<Animator>();
+		deathSound = GetComponent<AudioSource>();
 	}
 
 	private void FixedUpdate() {
@@ -19,8 +21,10 @@ public class LivingGoblin : MonoBehaviour {
 
 		if (dieTick == m_dieAfter) {
 			anim.SetBool("Die", true);
-			m_combatUI.DecreaseMovesLeft();
+			deathSound.Play();
 			dead = true;
+
+			m_combatUI.DecreaseMovesLeft();
 		}
 		else {
 			dieTick++;
