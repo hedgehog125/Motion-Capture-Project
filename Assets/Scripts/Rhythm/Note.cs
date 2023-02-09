@@ -13,4 +13,6 @@ public class Note : ScriptableObject {
 	public Color color;
 
 	public int beatTime;
+	public Material material;
+	public AudioClip sound;
 }

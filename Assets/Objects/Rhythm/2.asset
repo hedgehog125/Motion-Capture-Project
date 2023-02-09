@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   beatTime: 375
+  material: {fileID: 2100000, guid: c8799124fb83f544d8d6d703cf41e9b4, type: 2}
+  sound: {fileID: 8300000, guid: d40c2deb6fe10e64eaa0ad9642f5ff48, type: 3}

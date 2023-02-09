@@ -11,7 +11,7 @@ public class MusicSpawner : MonoBehaviour {
 			GameObject note = Instantiate(m_notePrefab);
 			note.transform.parent = transform;
 
-			note.GetComponent<MusicNote>().NoteData = noteData;
+			note.GetComponent<MusicNote>().noteData = noteData;
 		}
 	}
 }
